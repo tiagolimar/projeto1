@@ -1,9 +1,8 @@
-
-setInterval(displayTime, 1000);
-
-function displayTime() {
-    const display = document.getElementsByTagName('h3')[0];
+function mostrarDataHora() {
     const date = new Date();
-    display.innerHTML = date.toLocaleString();    
-
+    console.log(date.toLocaleString());
+    
+    document.getElementById('date').innerText = date.toLocaleString();
 }
+
+mostrarDataHora();
